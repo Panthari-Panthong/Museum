@@ -18,14 +18,16 @@
       <h1>Truth Unveiled by Time</h1>
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Bernini_Truth_unveiled_by_Time_Gal_Borghese.jpg">
     </section>
-    <section id="comments">
+    <section id='comments'>
       <h2>Comments</h2>
-      <section class="comment">
+
+      <section class='comment'>
         <h3>Arien said:</h3>
         <p>"This is definitely one of my favorites!"</p>
       </section>
     </section>
-    <form>
+
+    <form onsubmit="submitComment(); return false">
       <div class="formSection">
         <label for="name">Name:</label>
         <input type="text" id="name">
@@ -35,7 +37,7 @@
         <textarea id="msg"></textarea>
       </div>
       <div class="button">
-        <button type="default">Post your comment!</button>
+        <button type="default">Post your comment</button>
       </div>
     </form>
   </main>
