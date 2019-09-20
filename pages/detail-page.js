@@ -324,8 +324,22 @@ const data = {
   ]
 }
 
+const paintings = data.artObjects;
 
+function displayPainting(painting) {
+  const content = document.querySelector('#content')
+  const titel = document.createElement('h1')
+  const img = document.createElement('img')
 
+  titel.innerHTML = painting.longTitle;
+  img.alt = painting.title
+  img.src = painting.webImage.url;
+
+  content.appendChild(titel);
+  content.appendChild(img)
+}
+
+displayPainting(paintings[0]);
 
 
 
